@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
 import { Home } from "./components/pages/Home";
+import { Login } from "./components/pages/Login";
 
 import "../styles/index.less"
 
@@ -18,7 +19,8 @@ function App() {
         <div >
             <h1> hi this is index.js</h1>
             <Routes>
-                <Route path="/home" element={<Home  />} />
+                <Route path="/login" element={<Login  />} />
+                <Route path="/" element={<Home  />} />
             </Routes>
         </div>
     )
